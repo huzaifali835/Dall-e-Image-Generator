@@ -8,7 +8,7 @@ app.http("getChatGPTSuggestion", {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt:
-        "Write a random text prompt for DALL·E to generate an image, this prompt will be shown to the user, include details such as the genre and what type of painting it should be, options can include: geometric shapes, minimalist, patterns, oil painting, watercolor, photo-realistic, 4k, abstract, modern, black and white, etc. Do not wrap the answer in quotes.",
+        "Write a random text prompt for DALL·E to generate an image, this prompt will be shown to the user, include details such as the genre and what type of painting it should be, options can include: geometric shapes, impressionistic, minimalist, patterns, oil painting, watercolor, photo-realistic, realistic portrait, 4k, still life, abstract, modern, black and white, etc. Do not wrap the answer in quotes.",
       max_tokens: 1000,
       temperature: 0.8,
     });
